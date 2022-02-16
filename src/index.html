@@ -1,20 +1,81 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="index.css">
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="index.css" />
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <title>Day9 validation</title>
-</head>
-<body>
+  </head>
+  <body>
+    <div id="main_content">
+      <form>
+        <div>
+          <labe>Name</labe>
+          <input id="username" type="text" />
+          <p id="show_error1"></p>
+        </div>
+
+
+
+        <div>
+          <label for="">Email</label>
+          <input id = "email_add" type="text" />
+          <p id="show_error2"></p>
+        </div>
 
 
 
 
+        <div>
+          <label for="education"> Education</label>
+          <select name="education" id="education">
+            <option  value=""> Select</option>
+            <option value="high school">High School</option>
+            <option value="intermedia">Intermedia</option>
+            <option value="graduation">Graduation</option>
+          </select>
+          <p id="show_error3"></p>
+        </div>
+
+
+        <div>
+          <label for=""> Gender</label>
+          <input type="radio" name= "gender" value="male" id="male"> Male</input>
+          <input type="radio" name= "gender" value="female" id="female"> Female</input>
+
+          <p id="show_error4"></p>
+        </div>
+
+
+        <div>
+          <label for="">Hobbies </label>
+          <input id ="1check" type="checkbox" value="Drawing" name="hobbies">Drawing</input>
+          <input id ="2check" type="checkbox" value="singing"  name="hobbies"> Singing </input>
+          <input  id ="3check" type="checkbox" value="dancing" name="hobbies">Dancing </input>
+          <p id="show_error5"></p>
+        </div>
+
+
+
+
+
+        <div>
+          <label for="comment">Comment</label>
+          <textarea id="comment" name=" comment"></textarea>
+          <p id="show_error6"></p>
+        </div>
+
+
+
+
+
+        <div>
+          <input id="submit" type="button" value="Submit" />
+        </div>
+      </form>
+    </div>
 
     <script src="index.js"></script>
-    
-</body>
+  </body>
 </html>
